@@ -34,7 +34,7 @@ var ViewClass = React.createClass({
   hideMenu: function() {
     ToolTipMenu.hide();
   },
-  
+
   getOptionTexts: function() {
     return this.props.actions.map((option) => option.text);
   },
@@ -78,7 +78,7 @@ var ViewClass = React.createClass({
         <TouchableHighlight
           {...this.getTouchableHighlightProps()}
         >
-          <View>
+          <View style={this.props.style}>
             {this.props.children}
           </View>
         </TouchableHighlight>
